@@ -2,18 +2,30 @@
   --bg-color-about: yellow;
   --bg-color-work: purple;
 }
-.navbar {
-  justify-content: space-between !important;
-}
 
 .about-me {
   display: flex;
-  margin: 20px 50px;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me div {
-  margin: 0 20px;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid var(--bg-color-work);
+  border-radius: 5px;
+}
+.card-body {
+  background-color: var(--bg-color-work);
+  /* padding: 10px; */
+  /* margin: 10px; */
+}
+
+.row {
+  margin-bottom: 10px;
 }
 
 .jumbotron {
@@ -25,4 +37,17 @@
     width: 80vw;
     margin: 0 auto;
   }
+  .about-me {
+    padding: 20px 50px;
+    flex-direction: row;
+  }
+
+  .about-me div {
+    margin: 0 20px;
+    text-align: justify;
+  }
+
+  .row {
+  margin-bottom: 20px;
+}
 }
