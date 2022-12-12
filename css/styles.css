@@ -1,0 +1,28 @@
+:root {
+  --bg-color-about: yellow;
+  --bg-color-work: purple;
+}
+.navbar {
+  justify-content: space-between !important;
+}
+
+.about-me {
+  display: flex;
+  margin: 20px 50px;
+  flex-direction: row;
+}
+
+.about-me div {
+  margin: 0 20px;
+}
+
+.jumbotron {
+  background-color: var(--bg-color-about);
+}
+
+@media only screen and (min-width: 600px) {
+  .page-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
