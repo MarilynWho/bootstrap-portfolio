@@ -1,6 +1,12 @@
 :root {
-  --bg-color-about: yellow;
-  --bg-color-work: purple;
+  --bg-color-about: #e7c6ff;
+  --bg-color-work: #ffd6ff;
+  --bg-color-skills: #c8b6ff;
+  --bg-color-contacts: #b8c0ff;
+  --bg-color-footer: #bbd0ff;
+  --spacing-small: 10px;
+  --spacing-medium: 15px;
+  --spacing-large: 20px;
 }
 
 .about-me {
@@ -14,9 +20,16 @@
   text-align: center;
 }
 
+/* .jumbotron {
+  background-color: var(--bg-color-about);
+  border-radius: var(--spacing-small);
+  margin: var(--spacing-medium);
+} */
+
 .card {
   border: 1px solid var(--bg-color-work);
-  border-radius: 5px;
+  border-radius: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
 }
 .card-body {
   background-color: var(--bg-color-work);
@@ -24,12 +37,23 @@
   /* margin: 10px; */
 }
 
-.row {
-  margin-bottom: 10px;
+#skills, .jumbotron {
+  background-color: var(--bg-color-skills);
+  border-radius: var(--spacing-small);
+  margin: var(--spacing-medium);
 }
 
-.jumbotron {
-  background-color: var(--bg-color-about);
+.block {
+  padding: var(--spacing-large);
+}
+
+.block>div>div>ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.block>div>div>ul>li {
+  margin: var(--spacing-small);
 }
 
 @media only screen and (min-width: 600px) {
@@ -38,16 +62,16 @@
     margin: 0 auto;
   }
   .about-me {
-    padding: 20px 50px;
+    padding: var(--spacing-large) 50px;
     flex-direction: row;
   }
 
   .about-me div {
-    margin: 0 20px;
+    margin: 0 var(--spacing-large);
     text-align: justify;
   }
 
-  .row {
-  margin-bottom: 20px;
+  .card {
+  margin-bottom: var(--spacing-large);
 }
 }
