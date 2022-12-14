@@ -1,9 +1,9 @@
 :root {
-  --bg-color-about: #e7c6ff;
-  --bg-color-work: #ffd6ff;
-  --bg-color-skills: #c8b6ff;
-  --bg-color-contacts: #b8c0ff;
-  --bg-color-footer: #bbd0ff;
+  --light-bg-color: #fefae0;
+  --dark-bg-color: #dda15e;
+  --bg-color-work: #bc6c25;
+  --color-link: #283618;
+  --color-link-hover: #606c38;
   --spacing-small: 10px;
   --spacing-medium: 15px;
   --spacing-large: 20px;
@@ -20,59 +20,78 @@
   text-align: center;
 }
 
-/* .jumbotron {
-  background-color: var(--bg-color-about);
-  border-radius: var(--spacing-small);
-  margin: var(--spacing-medium);
-} */
-
 .card {
-  border: 1px solid var(--bg-color-work);
+  border: 1px solid var(--dark-bg-color);
   border-radius: var(--spacing-small);
   margin-bottom: var(--spacing-small);
 }
 .card-body {
-  background-color: var(--bg-color-work);
-  /* padding: 10px; */
-  /* margin: 10px; */
+  background-color: var(--dark-bg-color);
 }
 
-#skills, .jumbotron, footer, nav {
-  background-color: var(--bg-color-skills);
+#skills,
+.jumbotron,
+footer,
+nav {
+  background-color: var(--light-bg-color);
   border-radius: var(--spacing-small);
   margin: var(--spacing-medium);
 }
 
-nav {
-  background-color: var(--bg-color-about);
+.jumbotron img {
+  border-radius: var(--spacing-small);
 }
+
+nav {
+  background-color: var(--dark-bg-color);
+}
+
 .block {
   padding: var(--spacing-large);
 }
 
-.block>div>div>ul, footer>ul {
+.block > div > div > ul,
+footer > ul {
   list-style: none;
   padding-left: 0;
 }
 
-.block>div>div>ul>li, footer>ul>li {
+.block > div > div > ul > li,
+footer > ul > li {
   margin: var(--spacing-small);
 }
 
+.block a,
+footer a,
+.card-link,
+.nav-link {
+  color: var(--color-link);
+}
+
+.block a:hover,
+.block a:focus,
+footer a:hover,
+footer a:focus,
+.card-link:hover,
+.card-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-link-hover);
+  box-shadow: 0 0 11px rgba(132, 252, 84, 0.7);
+  text-decoration: none;
+}
+
 footer {
-  background-color: var(--bg-color-footer);
+  background-color: var(--dark-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-footer> ul {
+footer > ul {
   display: flex;
 }
 
-footer a {
-  color: var(--bg-color-work);
-}
 footer h2 {
   margin-top: var(--spacing-medium);
 }
@@ -93,10 +112,10 @@ footer h2 {
   }
 
   .card {
-  margin-bottom: var(--spacing-large);
-}
+    margin-bottom: var(--spacing-large);
+  }
 
-.jumbotron {
+  .jumbotron {
     padding: 1rem 1rem;
-}
+  }
 }
