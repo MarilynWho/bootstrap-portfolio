@@ -37,7 +37,7 @@
   /* margin: 10px; */
 }
 
-#skills, .jumbotron {
+#skills, .jumbotron, footer {
   background-color: var(--bg-color-skills);
   border-radius: var(--spacing-small);
   margin: var(--spacing-medium);
@@ -54,6 +54,10 @@
 
 .block>div>div>ul>li {
   margin: var(--spacing-small);
+}
+
+footer {
+  background-color: var(--bg-color-footer);
 }
 
 @media only screen and (min-width: 600px) {
