@@ -73,6 +73,9 @@ footer> ul {
 footer a {
   color: var(--bg-color-work);
 }
+footer h2 {
+  margin-top: var(--spacing-medium);
+}
 
 @media only screen and (min-width: 600px) {
   .page-wrapper {
